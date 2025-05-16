@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
+<header>
+    <h2>SURVEY FORM</h2>
+    <nav style="text-align: center;" class="nav-bar">
+    <ul >
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="Me.html">About Me</a></li>
+       <li> <a href="Project.html">Project</a></li>
+       <li> <a href="contact.html">Contact Form</a></li>
+        <li><a href="Survey.html">Survey Page</a></li>
+    </ul>
+</nav>
+</header>
+
+<html>
+    <head>
+        <title>My survey</title>
+    </head>
+    <body class="me">
+        <!--page 1-->
+        <h2>Personal Info</h2>
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+        <label>Gender:</label><br>
+        <label><input type="radio" name="gender" value="male" required>Male</label><br>
+        <label><input type="radio" name="gender" value="Female" required>Female</label><br>
+        <button type="button" onclick="nextStep()">Next</button>
+
+        <!--page2-->
+        <h2>Your Experience</h2>
+        <label>What Features do you use?(select atleast one)</label><br>
+        <label><input type="checkbox" name="Features" value="chat">chat</label><br>
+        <label><input type="checkbox" name="Features" value="Video">video</label><br>
+        <label><input type="checkbox" name="Features" value="email">Email</label><br>
+
+        <label>Your Feedback:</label><br>
+        <textarea name="Feedback"required placeholder="Your Opinion"></textarea><br>
+        <button type="button" onclick="prevStep()">Back</button><br><br>
+        <button>Submit</button>
+
+
+    </body>
+</html>

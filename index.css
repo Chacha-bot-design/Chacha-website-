@@ -1,0 +1,70 @@
+h1{
+
+    position:relative;
+    animation: slideRight 10s linear infinite;
+    white-space: nowrap;
+}
+@keyframes slideRight{
+    0%{left:-100%}
+    100%{left: 100%;}
+    }
+nav a{
+    margin-right: 30px;
+}
+
+footer{
+    color: red;
+    margin: 70px 50px;
+    background-color:silver;
+    text-align: center;
+    animation: twinkle 20s infinite;
+}
+@keyframes twinkle{
+    0%, 100%{opacity: 1;}
+    50%{ opacity: 0.3;}
+}
+.slideshow-container{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+.mySlide{
+    display: none;
+    width: 100%;
+
+}
+.nav-bar { list-style-type: none; 
+    padding: 0; 
+    display: block; 
+    justify-content: center; 
+    gap: 1em;
+    text-size-adjust: 10px;
+
+    }
+.nav-bar li{display: inline;}
+.nav-bar a{text-decoration: none;
+         color: wheat;}
+header, footer { background-color: #333; color: white; text-align: center;padding: 40px,40px; }
+.me{
+    text-align: center;
+}
+
+.slideshow-container{
+
+    overflow: hidden;
+    justify-content: center;
+}
+.slide{
+    display: none;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+
+}
+
