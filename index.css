@@ -1,70 +1,76 @@
-h1{
-
-    position:relative;
-    animation: slideRight 10s linear infinite;
-    white-space: nowrap;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-@keyframes slideRight{
-    0%{left:-100%}
-    100%{left: 100%;}
+header {
+  background-color: #59b82d;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 20px;
+}
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
     }
-nav a{
-    margin-right: 30px;
-}
-
-footer{
-    color: red;
-    margin: 70px 50px;
-    background-color:silver;
-    text-align: center;
-    animation: twinkle 20s infinite;
-}
-@keyframes twinkle{
-    0%, 100%{opacity: 1;}
-    50%{ opacity: 0.3;}
-}
-.slideshow-container{
-    width: 100%;
-    max-width: 600px;
-    position: relative;
-    margin: auto;
-}
-.mySlide{
-    display: none;
-    width: 100%;
-
-}
-.nav-bar { list-style-type: none; 
-    padding: 0; 
-    display: block; 
-    justify-content: center; 
-    gap: 1em;
-    text-size-adjust: 10px;
-
+    nav ul li {
+      margin: 10px 0;
     }
-.nav-bar li{display: inline;}
-.nav-bar a{text-decoration: none;
-         color: wheat;}
-header, footer { background-color: #333; color: white; text-align: center;padding: 40px,40px; }
-.me{
-    text-align: center;
-}
+  }
+  
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  nav ul li a:hover {
+    background-color: blue;
+    .styled-image {
+        width: 100%;
+        border: 3px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+      #555{
+    color: yellow;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
-.slideshow-container{
-
-    overflow: hidden;
-    justify-content: center;
-}
-.slide{
-    display: none;
-    
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-
-
-}
-
+      }
+      .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .image img{
+        max-width: 100%;
+        height: auto;
+      }
+      .form{
+        width: 40%;
+        padding-left: 10px;
+      }
